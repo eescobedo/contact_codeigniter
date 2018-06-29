@@ -19,13 +19,11 @@
 <!--            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">-->
 <!--        </div>-->
 <!--        <div class="form-group">-->
-<!--            <label for="exampleSelect1">Detalles</label>-->
-<!--            <select class="form-control" id="details">-->
-<!--                <option>1</option>-->
-<!--                <option>2</option>-->
-<!--                <option>3</option>-->
-<!--                <option>4</option>-->
-<!--                <option>5</option>-->
+<!--            <label for="categories">Categorías</label>-->
+<!--            <select class="form-control" id="categories" name="category_id">-->
+<!--                --><?php //foreach ($categories as $category) { ?>
+<!--                    <option value="--><?php //echo $category['id']; ?><!--">--><?php //echo $category['name']; ?><!--</option>-->
+<!--                --><?php //} ?>
 <!--            </select>-->
 <!--        </div>-->
 <!--        <div class="form-group">-->

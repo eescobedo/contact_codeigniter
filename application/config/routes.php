@@ -55,6 +55,8 @@ $route['categories/update'] = 'categories/update';
 $route['categories/(:any)'] = 'categories/view/$1';
 
 $route['courses'] = 'courses/index';
+$route['courses/create'] = 'courses/create';
+$route['courses/update'] = 'courses/update';
 $route['courses/(:any)'] = 'courses/view/$1';
 
 $route['news/create'] = 'news/create';
