@@ -32,7 +32,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url(); ?>about">Experiencia con Pagos</a>
+                    <a class="nav-link" href="<?php echo base_url(); ?>payment">Experiencia con Pagos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>about">Estilo formulario contacto</a>
