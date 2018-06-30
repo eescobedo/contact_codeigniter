@@ -5,7 +5,7 @@ class Courses extends CI_Controller
 
     public function index()
     {
-        $data['title'] = ucfirst('Ultimos Cursos');
+        $data['title'] = ucfirst('Últimos Cursos');
         $data['courses'] = $this->course_model->get_courses();
 
         $this->load->view('templates/header');

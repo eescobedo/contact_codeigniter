@@ -60,7 +60,8 @@ $route['courses/create'] = 'courses/create';
 $route['courses/update'] = 'courses/update';
 $route['courses/(:any)'] = 'courses/view/$1';
 
-$route['search'] = 'search/index';
+//$route['search'] = 'search/view';
+//$route['search/(:any)'] = 'search/view/$1';
 
 $route['(:any)'] =  'pages/view/$1';
 $route['default_controller'] = 'pages/view';

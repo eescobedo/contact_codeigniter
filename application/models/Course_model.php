@@ -74,4 +74,19 @@ class Course_model extends CI_Model
 
         return true;
     }
+
+    public function get_courses_by_string()
+    {
+        $q = $this->input->post('q');
+
+        $this->db->from('courses');
+        $this->db->select('courses.name, courses.details, courses.created_at, courses.id, categories.name as category_name ');
+        $this->db->order_by('courses.created_at', 'DESC');
+        $this->db->join('categories', 'categories.id = courses.category_id');
+        $this->db->like('courses.name', $q);
+        $this->db->or_like('courses.details', $q);
+        $query = $this->db->get();
+
+        return $query->result_array();
+    }
 }

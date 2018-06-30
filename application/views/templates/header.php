@@ -39,9 +39,12 @@
                 </li>
             </ul>
             <?php //TODO: hay que ingresar la busqueda ?>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" placeholder="Buscar" type="text">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Búsqueda</button>
+<!--            <form class="form-inline my-2 my-lg-0">-->
+            <?php
+                $attributes = array('class' => 'form-inline my-2 my-lg-0');
+             echo form_open('/search/view', $attributes); ?>
+                <input class="form-control mr-sm-2" placeholder="Buscar" type="text" name="q">
+                <input type="submit" class="btn btn-secondary my-2 my-sm-0" value="Búsqueda" role="button"/>
             </form>
         </div>
     </div>
