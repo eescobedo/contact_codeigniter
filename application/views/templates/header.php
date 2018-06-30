@@ -35,9 +35,10 @@
                     <a class="nav-link" href="<?php echo base_url(); ?>payment">Experiencia con Pagos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url(); ?>about">Estilo formulario contacto</a>
+                    <a class="nav-link" href="<?php echo base_url(); ?>contact">Estilo formulario contacto</a>
                 </li>
             </ul>
+            <?php //TODO: hay que ingresar la busqueda ?>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" placeholder="Buscar" type="text">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Búsqueda</button>

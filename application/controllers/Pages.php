@@ -8,10 +8,13 @@ class Pages extends CI_Controller
             show_404();
         }
 
-        $data['title'] = ucfirst($page);
-
-        $this->load->view('templates/header', $data);
-        $this->load->view('pages/' . $page, $data);
-        $this->load->view('templates/footer', $data);
+        if (strtolower($page) == 'contact') {
+            $this->load->view('pages/' . $page);
+        } else {
+            $data['title'] = ucfirst($page);
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/' . $page);
+            $this->load->view('templates/footer', $data);
+        }
     }
 }

@@ -1,1 +1,0 @@
-    Gracias por ingresar informacion

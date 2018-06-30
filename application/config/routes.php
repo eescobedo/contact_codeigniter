@@ -60,13 +60,7 @@ $route['courses/create'] = 'courses/create';
 $route['courses/update'] = 'courses/update';
 $route['courses/(:any)'] = 'courses/view/$1';
 
-$route['news/create'] = 'news/create';
-$route['news/(:any)'] = 'news/view/$1';
-$route['news'] =  'news';
-
-$route['contact'] = 'contact/index';
-$route['contact/(:any)'] = 'contact/create';
-$route['contact'] =  'contact';
+$route['search'] = 'search/index';
 
 $route['(:any)'] =  'pages/view/$1';
 $route['default_controller'] = 'pages/view';
