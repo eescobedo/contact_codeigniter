@@ -1,6 +1,7 @@
 <h2><?php echo $title; ?></h2>
-<?php echo validation_errors(); ?>
-<?php echo form_open('categories/update'); ?>
+<?php echo validation_errors();
+$attributes = array('id' => 'updateCategoryForm');
+echo form_open('categories/update', $attributes); ?>
 <input type="hidden" name="id" value="<?php echo $category['id']; ?>">
 <fieldset>
     <div class="form-group">

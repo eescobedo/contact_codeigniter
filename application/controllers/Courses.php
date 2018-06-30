@@ -5,7 +5,7 @@ class Courses extends CI_Controller
 
     public function index()
     {
-        $data['title'] = ucfirst('Latest courses');
+        $data['title'] = ucfirst('Ultimos Cursos');
         $data['courses'] = $this->course_model->get_courses();
 
         $this->load->view('templates/header');
@@ -21,6 +21,7 @@ class Courses extends CI_Controller
             show_404();
         }
 
+        $data['categories'] = $this->course_model->get_categories();
         $data['title'] = $data['course']['name'];
 
         $this->load->view('templates/header');
@@ -59,10 +60,22 @@ class Courses extends CI_Controller
 
         $data['categories'] = $this->course_model->get_categories();
 
-        $data['title'] = 'Edit course';
+        $data['title'] = 'Editar curso';
 
         $this->load->view('templates/header');
         $this->load->view('courses/edit', $data);
         $this->load->view('templates/footer');
+    }
+
+    public function update()
+    {
+        $this->course_model->update_course();
+        redirect('courses');
+    }
+
+    public function delete($id)
+    {
+        $this->course_model->delete_course($id);
+        redirect('courses');
     }
 }

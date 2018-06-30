@@ -8,6 +8,7 @@ class ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -22,8 +23,10 @@ class ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\Translation\\' => 30,
         ),
         'D' => 
         array (
@@ -43,6 +46,10 @@ class ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
@@ -50,6 +57,10 @@ class ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -59,6 +70,10 @@ class ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -551,6 +566,7 @@ class ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitad1593e0a412c3a401e1c2a4577ce2f3::$classMap;
 

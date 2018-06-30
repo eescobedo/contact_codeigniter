@@ -70,6 +70,16 @@ class Categories extends CI_Controller
     {
         $this->categories_model->update_post();
         redirect('categories');
+    }
 
+    public function courses($id)
+    {
+        $data['title'] = $this->categories_model->get_category($id)->name;
+
+        $data['courses'] = $this->course_model->get_courses_by_category($id);
+
+        $this->load->view('templates/header');
+        $this->load->view('courses/index', $data);
+        $this->load->view('templates/footer');
     }
 }

@@ -55,4 +55,10 @@ class Categories_model extends CI_Model
         $this->db->where('id', $this->input->post('id'));
         return $this->db->update('categories', $data);
     }
+
+    public function get_category($id)
+    {
+        $query = $this->db->get_where('categories', array('id' =>$id));
+        return $query->row();
+    }
 }

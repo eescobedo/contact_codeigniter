@@ -312,4 +312,7 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+$composer_vendor_path = '../contact_form/vendor';
+require_once $composer_vendor_path.'/autoload.php';
+
 require_once BASEPATH.'core/CodeIgniter.php';
